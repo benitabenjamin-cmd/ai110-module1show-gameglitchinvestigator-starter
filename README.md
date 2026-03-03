@@ -26,12 +26,14 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose
+
 The purpose of the game is to guess a secret number within a limited number of attempts. 
 - [ ] Detail which bugs you found.
-Secret number wasn't constant for each game
-Guess allowed out of range numbers
-Guess accepted non int 
-Hints were wrong
+
+- Secret number wasn't constant for each game
+- Guess allowed out of range numbers
+- Guess accepted non int 
+- Hints were wrong
 
 MORE DETAILED BUG FIXES 
 
@@ -53,7 +55,9 @@ Fix: Added type-safety by converting and made sure check_guess always returns a 
 
 - [ ] Explain what fixes you applied.
 Moved the secret number into st.session_state
+
 Added checks to accept numbers which are in given state
+
 Changed hints correctly
 
 ## 📸 Demo
