@@ -54,11 +54,9 @@ Bug: The “Too High” / “Too Low” hints behaved inconsistently
 Fix: Added type-safety by converting and made sure check_guess always returns a tuple
 
 - [ ] Explain what fixes you applied.
-Moved the secret number into st.session_state
-
-Added checks to accept numbers which are in given state
-
-Changed hints correctly
+- Moved the secret number into st.session_state
+- Added checks to accept numbers which are in given state
+- Changed hints correctly
 
 ## 📸 Demo
 
