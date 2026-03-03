@@ -32,6 +32,25 @@ Secret number wasn't constant for each game
 Guess allowed out of range numbers
 Guess accepted non int 
 Hints were wrong
+
+MORE DETAILED BUG FIXES 
+
+1. Secret number changing
+Bug: Every time the app reran, the secret number reset
+Fix: Stored secret in st.session_state and only generated a new secret when starting a new game or changing difficulty
+
+2. Parse Guess allowed out of range 
+Bug: User could enter a number outside the range, and the game would accept it
+Fix: Added low and high parameters and checked that value is within that range
+
+3. Check guess validation
+Bug: If guess or secret were not integers, the game could crash.
+Fix: Cast both guess and secret to integers
+
+4. Hints were wrong
+Bug: The “Too High” / “Too Low” hints behaved inconsistently
+Fix: Added type-safety by converting and made sure check_guess always returns a tuple
+
 - [ ] Explain what fixes you applied.
 Moved the secret number into st.session_state
 Added checks to accept numbers which are in given state
