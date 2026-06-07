@@ -62,10 +62,8 @@ Fix: Added type-safety by converting and made sure check_guess always returns a 
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
 
-images/Game.png
-
-
-images/Test.png
+![Test Results](images/Test.png)
+![Game Results](images/Game.png)
 
 ## 🚀 Stretch Features
 
